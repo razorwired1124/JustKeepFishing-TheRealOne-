@@ -55,7 +55,17 @@ public class MainActivity extends AppCompatActivity {
 
         listSearch = (ListView)findViewById(R.id.list);
         editSearch = (EditText)findViewById(R.id.searchBar);
-        adapter = new ArrayAdapter<String>(this, R.layout.activity_search, R.id.textView, data);
+        adapter = new ArrayAdapter<String>(this, R.layout.activity_search, R.id.textView, data) {
+            @Override public View getView(int position, View convertView, ViewGroup parent) {
+                View view = super.getView(position, convertView, parent);
+                ViewGroup.LayoutParams params = view.getLayoutParams();
+                params.height = 50;
+                view.setLayoutParams(params);
+                return view;
+            }
+
+        };
+
         listSearch.setAdapter(adapter);
         listSearch.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
