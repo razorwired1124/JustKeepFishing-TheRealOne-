@@ -14,6 +14,7 @@
         android:layout_height="34dp"
         android:layout_marginTop="178dp"
         android:layout_marginBottom="18dp"
+        android:text="Camera"
         android:textColor="@android:color/background_dark"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/CameraID"
@@ -42,8 +43,9 @@
         android:id="@+id/GalleryID"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="16dp"
         android:onClick="gallery"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -61,12 +63,13 @@
         android:layout_marginTop="178dp"
         android:layout_marginBottom="8dp"
 
+        android:text="Gallery"
         android:textColor="@android:color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.716"
+        app:layout_constraintHorizontal_bias="0.838"
         app:layout_constraintStart_toEndOf="@+id/textForCam"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.259" />
+        app:layout_constraintVertical_bias="0.0" />
 </android.support.constraint.ConstraintLayout>

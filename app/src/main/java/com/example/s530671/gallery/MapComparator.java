@@ -3,9 +3,6 @@ package com.example.s530671.gallery;
 import java.util.Comparator;
 import java.util.HashMap;
 
-/**
- * Created by SHAJIB on 7/12/2017.
- */
 
 class MapComparator implements Comparator<HashMap<String, String>>
 {

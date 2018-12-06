@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
 
     <GridView
         android:id="@+id/galleryGridView"
         android:layout_width="match_parent"
-        android:layout_height="287dp"
+        android:layout_height="313dp"
         android:background="#ffffff"
         android:columnWidth="172dp"
         android:gravity="center"
@@ -21,13 +21,26 @@
         android:stretchMode="columnWidth"
         android:verticalSpacing="5dp"></GridView>
 
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="textPersonName" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="wrap_content"
+        android:layout_height="236dp" />
+
     <!--<ImageButton-->
-        <!--android:id="@+id/imageButton"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_weight="1"-->
-        <!--android:onClick="camera"-->
-        <!--app:srcCompat="@android:drawable/arrow_down_float" />-->
+    <!--android:id="@+id/imageButton"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:onClick="camera"-->
+    <!--app:srcCompat="@android:drawable/arrow_down_float" />-->
 
 
 </LinearLayout>

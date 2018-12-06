@@ -13,14 +13,20 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
+import android.text.TextWatcher;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.BaseAdapter;
+import android.widget.EditText;
+import android.widget.Gallery;
 import android.widget.GridView;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -37,10 +43,42 @@ public class MainActivity extends AppCompatActivity {
     LoadAlbum loadAlbumTask;
     GridView galleryGridView;
     ArrayList<HashMap<String, String>> albumList = new ArrayList<HashMap<String, String>>();
+    private ListView listSearch;
+    private EditText editSearch;
+    private ArrayAdapter<String> adapter;
+
+    String data[] = {"bluegill", "bluegill2", "bass", "bass2", "carp", "carp2", "pike", "pike2"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        listSearch = (ListView)findViewById(R.id.list);
+        editSearch = (EditText)findViewById(R.id.searchBar);
+        adapter = new ArrayAdapter<String>(this, R.layout.activity_search, R.id.textView, data);
+        listSearch.setAdapter(adapter);
+        listSearch.setOnItemClickListener(new AdapterView.OnItemClickListener(){
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(MainActivity.this,data[position],Toast.LENGTH_SHORT).show();
+            }
+        });
+        editSearch.addTextChangedListener(new TextWatcher() {
+            @Override
+            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
+
+            }
+
+            @Override
+            public void onTextChanged(CharSequence s, int start, int before, int count) {
+                MainActivity.this.adapter.getFilter().filter(s);
+            }
+
+            @Override
+            public void afterTextChanged(Editable s) {
+            }
+        });
 
         galleryGridView = (GridView) findViewById(R.id.galleryGridView);
 
