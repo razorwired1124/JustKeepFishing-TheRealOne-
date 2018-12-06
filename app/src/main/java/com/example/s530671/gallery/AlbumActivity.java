@@ -109,14 +109,14 @@ public class AlbumActivity extends AppCompatActivity {
 
             SingleAlbumAdapter adapter = new SingleAlbumAdapter(AlbumActivity.this, imageList);
             galleryGridView.setAdapter(adapter);
-//            galleryGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//                public void onItemClick(AdapterView<?> parent, View view,
-//                                        final int position, long id) {
-//                    Intent intent = new Intent(AlbumActivity.this, GalleryPreview.class);
-//                    intent.putExtra("path", imageList.get(+position).get(Function.KEY_PATH));
-//                    startActivity(intent);
-//                }
-//            });
+            galleryGridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                public void onItemClick(AdapterView<?> parent, View view,
+                                        final int position, long id) {
+                    Intent intent = new Intent(AlbumActivity.this, GalleryPreview.class);
+                    intent.putExtra("path", imageList.get(+position).get(Function.KEY_PATH));
+                    startActivity(intent);
+                }
+            });
         }
     }
 }
