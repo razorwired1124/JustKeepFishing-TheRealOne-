@@ -1,5 +1,5 @@
 # JustKeepFishingPart2
 
-#James Runyon, Blake Dvarishkis, Jacob McCullough
+James Runyon, Blake Dvarishkis, Jacob McCullough
 
-#Specifications
+<h2>Specifications</h2>
