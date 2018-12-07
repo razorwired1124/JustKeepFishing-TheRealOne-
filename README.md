@@ -3,9 +3,9 @@
 <h2>Group Members:</h2> <br/><h3>James Runyon, <br/> Blake Dvarishkis, <br/> Jacob McCullough</h3>
 
 <h2>Specifications</h2>
-API - 21+
-Recommended API 28
-Version 5.0.0+
+API - 21+<br/>
+Recommended API 28<br/>
+Version 5.0.0+<br/>
 Tested on Google Pixel XL API 28, & Nexus 5X API 28
 
 <h2>Directions for Use</h2>
