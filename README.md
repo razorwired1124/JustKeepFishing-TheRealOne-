@@ -9,19 +9,19 @@ Version 5.0.0+
 Tested on Google Pixel XL API 28, & Nexus 5X API 28
 
 <h2>Directions for Use</h2>
-1. Open app using a device that supports the specifications listed above
-2. Once on the home screen click the picture of the camera on the left hand side to be taken to your devices camera
-3. Take picture taken will be stored in your devices default camera folder
-4. Return to the apps main activity by clicking on the back button on your device
-5. Click the picture of the gallery on the right hand side to be taken to the gallery activity
-6. Once in the gallery you can select the the picture in the top left hand corner of your gallery to view and scroll through all of your pictures
-7. After you have entered this section of your gallery you can scroll through and select any desired picture to be displayed on the screen, then hit the back button to view all pictures agian
-8. Once you are finished looking at your pictures you can hit the back button on your device to go to the previous activity in your gallery
-9. You can then select any item from the list view on the bottem half of your sceeen by clicking on the desired item
-10. After the item is selected a Toast messsage will appear at the bottem of the screen displaying the item you just selected 
-11. You can also enter the name of your desired item to have the items narrowed down, and then select the desired item
-12. *Note* The search bar function is not fully fuctionable, so after the results are narrowed, once you click on your disired item, the one displayed in the toast message may not be what you selected
-13. All steps required to traverse through our app have been provided, if you would like to know how a certian function works, please refer to the steps listed above this one
+1. Open app using a device that supports the specifications listed above<br/>
+2. Once on the home screen click the picture of the camera on the left hand side to be taken to your devices camera<br/>
+3. Take picture taken will be stored in your devices default camera folder<br/>
+4. Return to the apps main activity by clicking on the back button on your device<br/>
+5. Click the picture of the gallery on the right hand side to be taken to the gallery activity<br/>
+6. Once in the gallery you can select the the picture in the top left hand corner of your gallery to view and scroll through all of your pictures<br/>
+7. After you have entered this section of your gallery you can scroll through and select any desired picture to be displayed on the screen, then hit the back button to view all pictures agian<br/>
+8. Once you are finished looking at your pictures you can hit the back button on your device to go to the previous activity in your gallery<br/>
+9. You can then select any item from the list view on the bottem half of your sceeen by clicking on the desired item<br/>
+10. After the item is selected a Toast messsage will appear at the bottem of the screen displaying the item you just selected<br/>
+11. You can also enter the name of your desired item to have the items narrowed down, and then select the desired item<br/>
+12. *Note* The search bar function is not fully fuctionable, so after the results are narrowed, once you click on your disired item, the one displayed in the toast message may not be what you selected<br/>
+13. All steps required to traverse through our app have been provided, if you would like to know how a certian function works, please refer to the steps listed above this one<br/>
 14. Thank you :)
 
 <h2>Problem</h2>
